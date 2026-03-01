@@ -1769,11 +1769,24 @@
                   "new": false,
                   "number": 1,
                   "score": "10"
+                },
+                {
+                  "id": "960e63e8-51c2-4224-b3ff-bc6dd5747e7c",
+                  "title": "T-004 - Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 48,
+                  "score": "7"
                 }
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 1,
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
@@ -1973,7 +1986,7 @@
               "threats": [
                 {
                   "id": "864f08b3-71ff-4fac-9377-7667ceff8701",
-                  "title": "T-004 ",
+                  "title": "T-004 - Order Data Tampering",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
@@ -2000,7 +2013,7 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
@@ -3972,6 +3985,6 @@
     ],
     "diagramTop": 9,
     "reviewer": "Jason M. Ampoloquio",
-    "threatTop": 47
+    "threatTop": 48
   }
 }
