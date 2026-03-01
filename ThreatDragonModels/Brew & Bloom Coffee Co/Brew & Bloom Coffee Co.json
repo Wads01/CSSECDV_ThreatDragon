@@ -1,0 +1,63 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "Brew & Bloom Coffee Co",
+    "owner": "VAPT 4",
+    "description": "This sample document outlines the threat model for the Brew & Bloom Coffee Co. ordering web application. It systematically identifies security objectives, critical assets, the application’s profile and decomposition, and potential threats and vulnerabilities. The Brew & Bloom Coffee Co. Ordering Application can be decomposed into the following key components and their interactions, forming the basis for identifying trust boundaries and data flows.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Alastair Pearce"
+      },
+      {
+        "name": "Ralf Hernandez"
+      },
+      {
+        "name": "Samantha O'Neil"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Customer Places an Order",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": []
+      },
+      {
+        "id": 1,
+        "title": "Barista Updates Order Status",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": []
+      },
+      {
+        "id": 2,
+        "title": "Manager Accesses Basic Sales Reports",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": []
+      },
+      {
+        "id": 3,
+        "title": "Administrator Adds New Menu Item",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": []
+      }
+    ],
+    "diagramTop": 4,
+    "reviewer": "Jason M. Ampoloquio",
+    "threatTop": 0
+  }
+}
