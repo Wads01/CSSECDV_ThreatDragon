@@ -1352,13 +1352,6 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1567,7 +1560,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login Credentials and Report Request",
+              "name": "Login Credentials and Menu Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1600,7 +1593,7 @@
               }
             },
             "labels": [
-              "Login Credentials and Report Request"
+              "Login Credentials and Menu Data"
             ],
             "id": "bebe6fb1-f3b9-4dfe-b90b-a9e9bc3ffdc2",
             "source": {
@@ -1616,22 +1609,7 @@
                 "x": 600,
                 "y": 140
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1654,7 +1632,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sales Report Response",
+              "name": "Menu Creation Confirmation",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1687,7 +1665,7 @@
               }
             },
             "labels": [
-              "Sales Report Response"
+              "Menu Creation Confirmation"
             ],
             "id": "32bed20c-50d4-4469-937c-57b0e1efac68",
             "source": {
@@ -1726,7 +1704,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sales Data Query",
+              "name": "Create Menu Item",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1772,7 +1750,7 @@
               }
             },
             "labels": [
-              "Sales Data Query"
+              "Create Menu Item"
             ],
             "id": "9768a2b3-56bf-4305-a85d-1a600ae39b12",
             "source": {
@@ -1811,7 +1789,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sales Data Results",
+              "name": "Menu Creation Result",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1857,7 +1835,7 @@
               }
             },
             "labels": [
-              "Sales Data Results"
+              "Menu Creation Result"
             ],
             "id": "e65ed336-6a6b-4f9e-b4ed-f6e46504fb78",
             "source": {
