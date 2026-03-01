@@ -1429,13 +1429,6 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1905,11 +1898,24 @@
                   "new": false,
                   "number": 4,
                   "score": "2"
+                },
+                {
+                  "id": "ec25296b-3f49-4934-a409-adca7f2f14eb",
+                  "title": "T-004 ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 45,
+                  "score": "7"
                 }
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 1
               }
@@ -1966,22 +1972,35 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "1c8d8194-71b1-4674-8c35-18efbc3d4b3e",
-                  "title": "T-013 - Sales Data Disclosure",
+                  "id": "864f08b3-71ff-4fac-9377-7667ceff8701",
+                  "title": "T-004 ",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 8,
+                  "number": 46,
                   "score": "7"
+                },
+                {
+                  "id": "3e643a9b-c66d-4ca4-a4b2-22cb48bb7857",
+                  "title": "T-010 - Customer PII Disclosure ",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 47,
+                  "score": "10"
                 }
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 1,
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
@@ -2003,7 +2022,17 @@
                 "x": 830,
                 "y": 430
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -3943,6 +3972,6 @@
     ],
     "diagramTop": 9,
     "reviewer": "Jason M. Ampoloquio",
-    "threatTop": 44
+    "threatTop": 47
   }
 }
