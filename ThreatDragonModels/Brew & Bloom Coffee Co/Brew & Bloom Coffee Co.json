@@ -713,6 +713,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -796,7 +797,6 @@
               ]
             },
             "id": "71db88dd-eb98-4fdf-9878-a7798b27bcd6",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -823,7 +823,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Manager"
+                "text": "Administrator"
               },
               "body": {
                 "stroke": "#333333",
@@ -833,6 +833,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -916,10 +917,9 @@
               ]
             },
             "id": "fe446a42-0db1-455c-a241-360310332f9a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
-              "name": "Manager",
+              "name": "Administrator",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -953,6 +953,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1036,7 +1037,6 @@
               ]
             },
             "id": "5ba0dfe4-3b3f-4111-8d1d-e398074eb087",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -1073,7 +1073,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Login Credentials and Menu Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1087,7 +1087,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Login Credentials and Menu Data"
             ],
             "id": "bebe6fb1-f3b9-4dfe-b90b-a9e9bc3ffdc2",
             "source": {
@@ -1100,7 +1100,7 @@
             },
             "vertices": [
               {
-                "x": 640,
+                "x": 600,
                 "y": 150
               }
             ]
@@ -1125,7 +1125,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Menu Creation Confirmation",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1139,7 +1139,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Menu Creation Confirmation"
             ],
             "id": "32bed20c-50d4-4469-937c-57b0e1efac68",
             "source": {
@@ -1152,7 +1152,7 @@
             },
             "vertices": [
               {
-                "x": 840,
+                "x": 880,
                 "y": 150
               }
             ]
@@ -1177,7 +1177,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Create Menu Item",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1191,7 +1191,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Create Menu Item"
             ],
             "id": "9768a2b3-56bf-4305-a85d-1a600ae39b12",
             "source": {
@@ -1229,7 +1229,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Menu Creation Result",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1243,7 +1243,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Menu Creation Result"
             ],
             "id": "e65ed336-6a6b-4f9e-b4ed-f6e46504fb78",
             "source": {
