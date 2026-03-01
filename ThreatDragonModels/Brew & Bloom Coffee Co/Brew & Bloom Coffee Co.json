@@ -754,7 +754,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Transaction Response"
+              "Transaction Respons"
             ],
             "id": "741aa807-06b3-410b-98e0-c96f444c326e",
             "source": {
@@ -768,6 +768,74 @@
             "vertices": [
               {
                 "x": 760,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "486428dd-e7d4-4035-9f5d-474c9838ccf0",
+            "source": {
+              "x": 524,
+              "y": 89
+            },
+            "target": {
+              "x": 880,
+              "y": 90
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "a46e10bd-e41c-4922-be62-4c73f1b8f324",
+            "source": {
+              "x": 440,
+              "y": 370
+            },
+            "target": {
+              "x": 660,
+              "y": 470
+            },
+            "vertices": [
+              {
+                "x": 550,
                 "y": 440
               }
             ]
