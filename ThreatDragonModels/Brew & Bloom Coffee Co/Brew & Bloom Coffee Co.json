@@ -48,6 +48,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -131,7 +132,6 @@
               ]
             },
             "id": "2e686d47-b118-4bd1-9db1-f4112468de25",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -168,6 +168,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -251,7 +252,6 @@
               ]
             },
             "id": "7b38deaf-13bc-4874-861b-cdf659ce4a33",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -288,6 +288,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -371,7 +372,6 @@
               ]
             },
             "id": "6fd571e9-c859-4016-8e0e-2767c82fe059",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -412,6 +412,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -495,7 +496,6 @@
               ]
             },
             "id": "e67d98cd-e80d-42ca-8348-a3f998071a26",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Payment Gateway",
@@ -754,7 +754,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Transaction Respons"
+              "Transaction Response"
             ],
             "id": "741aa807-06b3-410b-98e0-c96f444c326e",
             "source": {
@@ -767,8 +767,8 @@
             },
             "vertices": [
               {
-                "x": 760,
-                "y": 440
+                "x": 780,
+                "y": 430
               }
             ]
           },
@@ -837,6 +837,40 @@
               {
                 "x": 550,
                 "y": 440
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "a44066ec-d7e9-44ae-b2d4-d3eeec87d61e",
+            "source": {
+              "x": 710,
+              "y": 460
+            },
+            "target": {
+              "x": 920,
+              "y": 350
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": 460
               }
             ]
           }
