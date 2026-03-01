@@ -3324,7 +3324,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Manager"
+                "text": "Administrator"
               },
               "body": {
                 "stroke": "red",
@@ -3420,7 +3420,7 @@
             "id": "fe446a42-0db1-455c-a241-360310332f9a",
             "data": {
               "type": "tm.Actor",
-              "name": "Manager",
+              "name": "Administrator",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
