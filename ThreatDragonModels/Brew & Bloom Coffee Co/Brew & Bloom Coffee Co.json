@@ -1429,6 +1429,13 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1442,7 +1449,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Manager"
+                "text": "Barista"
               },
               "body": {
                 "stroke": "red",
@@ -1538,7 +1545,7 @@
             "id": "fe446a42-0db1-455c-a241-360310332f9a",
             "data": {
               "type": "tm.Actor",
-              "name": "Manager",
+              "name": "Barista",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1564,13 +1571,6 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1722,38 +1722,12 @@
                   "new": false,
                   "number": 7,
                   "score": "2"
-                },
-                {
-                  "id": "8e470d77-28f7-40f6-a76f-94751f5f888a",
-                  "title": "T-006 - Sales Report Tampering",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 9,
-                  "score": "5"
-                },
-                {
-                  "id": "290b7eaa-0e43-47fa-bf6d-c42740c8b204",
-                  "title": "T-013 - Sales Data Disclosure",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 10,
-                  "score": "7"
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 0,
                 "repudiation": 1,
-                "informationDisclosure": 1,
+                "informationDisclosure": 0,
                 "denialOfService": 1
               }
             }
@@ -1779,7 +1753,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login Credentials and Report Request",
+              "name": "Login and Status Update Request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1812,7 +1786,7 @@
               }
             },
             "labels": [
-              "Login Credentials and Report Request"
+              "Login and Status Update Request"
             ],
             "id": "bebe6fb1-f3b9-4dfe-b90b-a9e9bc3ffdc2",
             "source": {
@@ -1828,29 +1802,13 @@
                 "x": 600,
                 "y": 140
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1866,40 +1824,26 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sales Report Response",
+              "name": "Order List Response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "47635a55-9136-4fd6-a1a4-2c8ace352af9",
-                  "title": "T-013 - Sales Data Disclosure",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": "7"
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 0,
                 "denialOfService": 0
               }
             },
             "labels": [
-              "Sales Report Response"
+              "Order List Response"
             ],
             "id": "32bed20c-50d4-4469-937c-57b0e1efac68",
             "source": {
@@ -1938,7 +1882,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sales Data Query",
+              "name": "Query and Update Orders",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1949,19 +1893,6 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [
-                {
-                  "id": "2f945c81-5e41-4803-829b-a4e8e9b2694d",
-                  "title": "T-006 - Sales Tampering",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": "5"
-                },
                 {
                   "id": "5b0d38e1-baa1-4a5b-8224-d416c6994dce",
                   "title": "T-015 - MongoDB Database DoS",
@@ -1978,13 +1909,13 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 1
               }
             },
             "labels": [
-              "Sales Data Query"
+              "Query and Update Orders"
             ],
             "id": "9768a2b3-56bf-4305-a85d-1a600ae39b12",
             "source": {
@@ -2023,7 +1954,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sales Data Results",
+              "name": "Order Data Results",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2034,19 +1965,6 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [
-                {
-                  "id": "28d004fb-fa78-40ac-b7cd-8498320ba78b",
-                  "title": "T-006 - Sales Tampering",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": "5"
-                },
                 {
                   "id": "1c8d8194-71b1-4674-8c35-18efbc3d4b3e",
                   "title": "T-013 - Sales Data Disclosure",
@@ -2063,13 +1981,13 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
             },
             "labels": [
-              "Sales Data Results"
+              "Order Data Results"
             ],
             "id": "e65ed336-6a6b-4f9e-b4ed-f6e46504fb78",
             "source": {
