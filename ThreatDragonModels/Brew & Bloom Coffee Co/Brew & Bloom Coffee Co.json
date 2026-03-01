@@ -511,6 +511,266 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Order Details and Login Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Order Details and Login Data"
+            ],
+            "id": "8220eba8-3848-4373-8bf5-ab4e128cca9e",
+            "source": {
+              "cell": "7b38deaf-13bc-4874-861b-cdf659ce4a33",
+              "port": "cbc4d12c-006b-4489-9b27-76b53a3a4632"
+            },
+            "target": {
+              "cell": "2e686d47-b118-4bd1-9db1-f4112468de25",
+              "port": "fcbac74d-39a6-483c-b0b3-097bdf0bf5df"
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Order Confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Order Confirmation"
+            ],
+            "id": "e6adc3ea-26bf-45b9-8f91-573ea7249f9b",
+            "source": {
+              "cell": "2e686d47-b118-4bd1-9db1-f4112468de25",
+              "port": "fcbac74d-39a6-483c-b0b3-097bdf0bf5df"
+            },
+            "target": {
+              "cell": "7b38deaf-13bc-4874-861b-cdf659ce4a33",
+              "port": "cbc4d12c-006b-4489-9b27-76b53a3a4632"
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Processing",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Payment Processing"
+            ],
+            "id": "d9897eab-809d-4db8-b09b-07ac4668de16",
+            "source": {
+              "cell": "2e686d47-b118-4bd1-9db1-f4112468de25",
+              "port": "094cfe66-ab8a-43b1-a002-54c639d6722b"
+            },
+            "target": {
+              "cell": "e67d98cd-e80d-42ca-8348-a3f998071a26",
+              "port": "2c4053d4-ab1d-4987-996c-3abdf9a9b855"
+            },
+            "vertices": [
+              {
+                "x": 840,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Store Order Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Store Order Data"
+            ],
+            "id": "39131898-db1e-4e72-89bb-72b787524746",
+            "source": {
+              "cell": "2e686d47-b118-4bd1-9db1-f4112468de25",
+              "port": "094cfe66-ab8a-43b1-a002-54c639d6722b"
+            },
+            "target": {
+              "cell": "6fd571e9-c859-4016-8e0e-2767c82fe059",
+              "port": "2c4053d4-ab1d-4987-996c-3abdf9a9b855"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Transaction Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Transaction Response"
+            ],
+            "id": "741aa807-06b3-410b-98e0-c96f444c326e",
+            "source": {
+              "cell": "e67d98cd-e80d-42ca-8348-a3f998071a26",
+              "port": "2c4053d4-ab1d-4987-996c-3abdf9a9b855"
+            },
+            "target": {
+              "cell": "2e686d47-b118-4bd1-9db1-f4112468de25",
+              "port": "094cfe66-ab8a-43b1-a002-54c639d6722b"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 440
+              }
+            ]
           }
         ]
       },
