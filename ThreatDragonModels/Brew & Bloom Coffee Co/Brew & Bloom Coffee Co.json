@@ -1558,12 +1558,32 @@
                   "new": false,
                   "number": 18,
                   "score": "5"
+                },
+                {
+                  "id": "d03a744c-6a2f-4c2a-ae8f-4b9c3af52f40",
+                  "title": "T-009 - Staff Action Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Staff members (Barista, Manager, Administrator) could deny performing actions if audit logs are insufficient, not immutable, or can be tampered with.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 49,
+                  "score": "5"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "repudiation": 0
+                "repudiation": 1
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2035,17 +2055,7 @@
                 "x": 830,
                 "y": 430
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -3985,6 +3995,6 @@
     ],
     "diagramTop": 9,
     "reviewer": "Jason M. Ampoloquio",
-    "threatTop": 48
+    "threatTop": 49
   }
 }
